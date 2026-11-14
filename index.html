@@ -1,54 +1,86 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#063b63"><meta name="description" content="Faça um teste vocacional rápido e gratuito e descubra áreas profissionais que combinam com seus interesses.">
-<title>Teste Vocacional Rápido e Gratuito</title>
-<style>
-:root{--navy:#063b63;--navy2:#082e4c;--cyan:#00a9bd;--yellow:#ffd21a;--white:#fff;--ink:#102b40;--muted:#607487;--paper:#f4f8fa;--line:#dce7ed;--shadow:0 18px 55px #062f4b1c}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}button,input{font:inherit}.topbar{background:var(--navy);color:#fff;padding:18px 22px}.topinner{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.header-title{font-weight:900;letter-spacing:.045em;font-size:clamp(1.05rem,3vw,1.45rem);line-height:1.15;text-transform:uppercase}.hero{background:linear-gradient(120deg,var(--navy2),var(--navy) 65%,#075579);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:300px;height:300px;border:42px solid #00a9bd38;border-radius:50%;right:-105px;top:-130px}.hero:before{content:"";position:absolute;width:180px;height:180px;background:var(--yellow);transform:rotate(45deg);right:12%;bottom:-155px;opacity:.95}.hero-inner{max-width:1080px;margin:auto;padding:64px 22px 72px;position:relative;z-index:1}.eyebrow{color:var(--yellow);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(2.35rem,6vw,4.7rem);line-height:.98;max-width:730px;margin:14px 0 18px;letter-spacing:-.045em}.hero h1 span{color:var(--yellow)}.hero p{font-size:1.1rem;color:#e4f1f7;max-width:620px;margin:0 0 27px}.btn{border:0;border-radius:12px;background:var(--yellow);color:var(--navy2);font-weight:900;padding:15px 22px;cursor:pointer;box-shadow:0 8px 22px #001b2c35;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.03)}.btn.secondary{background:#e8f3f7;color:var(--navy)}.btn:focus-visible,.option:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}.wrap{max-width:860px;margin:-28px auto 0;padding:0 18px 65px;position:relative;z-index:2}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,38px);box-shadow:var(--shadow)}.introgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 4px}.mini{background:#f1f7f9;border-radius:14px;padding:14px}.mini b{display:block;color:var(--navy);font-size:.92rem}.mini span{font-size:.8rem;color:var(--muted)}.note{font-size:.82rem;color:var(--muted)}.hidden{display:none!important}.quiz-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}.kicker{font-size:.78rem;color:var(--cyan);font-weight:900;letter-spacing:.1em;text-transform:uppercase}.counter{font-size:.82rem;color:var(--muted);font-weight:700}.progress{height:8px;border-radius:20px;background:#e7eff3;overflow:hidden;margin:12px 0 28px}.progress span{height:100%;display:block;background:var(--cyan);width:0;transition:width .25s}.question{font-size:clamp(1.35rem,3vw,1.9rem);line-height:1.2;color:var(--navy);margin:0 0 22px}.options{display:grid;gap:11px}.option{width:100%;text-align:left;border:1.5px solid var(--line);background:#fff;border-radius:13px;padding:15px 16px;cursor:pointer;color:var(--ink);display:flex;gap:12px;align-items:flex-start;transition:.16s}.option:hover{border-color:var(--cyan);background:#f4fbfc}.option.selected{border-color:var(--cyan);background:#eaf9fb;box-shadow:inset 0 0 0 1px var(--cyan)}.letter{flex:0 0 27px;height:27px;border-radius:8px;background:#eaf1f5;color:var(--navy);font-weight:900;display:grid;place-items:center;font-size:.82rem}.option.selected .letter{background:var(--cyan);color:#fff}.quiz-actions{display:flex;justify-content:space-between;gap:12px;margin-top:25px}.textbtn{border:0;background:transparent;color:var(--navy);font-weight:800;padding:12px 8px;cursor:pointer}.textbtn:disabled{opacity:.35;cursor:not-allowed}.result-tag{display:inline-block;background:#e9f9fb;color:#087b8b;font-weight:900;font-size:.76rem;padding:7px 11px;border-radius:999px;text-transform:uppercase;letter-spacing:.08em}.result h2{font-size:clamp(2rem,5vw,3rem);line-height:1.05;color:var(--navy);margin:15px 0 12px}.result p{color:#50697b}.course-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0 24px}.course{border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-weight:700;color:var(--navy);background:#fbfdfe}.cta{background:var(--navy);border-radius:18px;padding:22px;color:white;margin-top:24px}.cta h3{font-size:1.3rem;margin:0 0 7px}.cta p{color:#d7e7ef;margin:0 0 16px}.cta .btn{display:inline-block;text-decoration:none}.result-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.footer{background:#052b47;color:#d9e8ef;text-align:center;padding:25px 18px;font-size:.8rem}.footer strong{color:white}.disclaimer{border-left:4px solid var(--yellow);background:#fff9df;padding:13px 15px;border-radius:0 10px 10px 0;color:#67551b;font-size:.82rem;margin-top:22px}.privacy{font-size:.78rem;color:var(--muted);margin-top:12px}.field{width:100%;padding:13px;border:1px solid var(--line);border-radius:10px;margin:6px 0 14px}.smallcaps{font-size:.75rem;letter-spacing:.1em;font-weight:900;color:var(--cyan);text-transform:uppercase}
-@media(max-width:620px){.hero-inner{padding:48px 20px 62px}.introgrid{grid-template-columns:1fr}.course-list{grid-template-columns:1fr}.quiz-actions .btn{padding:13px 15px}.header-title{text-align:center}.topbar{padding:15px 17px}}
-</style>
-</head>
-<body>
-<header class="topbar"><div class="topinner"><div class="header-title">TESTE VOCACIONAL RÁPIDO E GRATUITO</div></div></header>
-<section class="hero"><div class="hero-inner"><div class="eyebrow">Seu futuro começa com autoconhecimento</div><h1>Descubra qual caminho <span>combina com você.</span></h1><p>Responda a perguntas sobre seus interesses, suas preferências e o tipo de atividade que desperta sua curiosidade. Ao final, conheça áreas profissionais e graduações para explorar.</p><button class="btn" id="startBtn">COMEÇAR MEU TESTE&nbsp; →</button></div></section>
-<main class="wrap">
-<section class="panel" id="welcome"><div class="smallcaps">Teste de afinidades profissionais</div><h2 style="color:var(--navy);font-size:1.8rem;margin:8px 0">Uma escolha mais consciente começa por você.</h2><p>Este questionário foi criado para ajudar você a refletir sobre áreas de interesse. Não existem respostas certas ou erradas: escolha a alternativa que mais combina com você neste momento.</p><div class="introgrid"><div class="mini"><b>15 perguntas</b><span>Rápido e intuitivo</span></div><div class="mini"><b>8 áreas</b><span>Interesses e possibilidades</span></div><div class="mini"><b>Resultado na hora</b><span>Com cursos para conhecer</span></div></div><p class="note">Tempo estimado: 3 a 5 minutos. Você não precisa informar seus dados para realizar o teste.</p><button class="btn" id="startBtn2">FAZER O TESTE</button></section>
-<section class="panel hidden" id="quiz" aria-live="polite"><div class="quiz-head"><span class="kicker">Vamos descobrir juntos</span><span class="counter" id="counter">Pergunta 1 de 15</span></div><div class="progress"><span id="progress"></span></div><h2 class="question" id="question"></h2><div class="options" id="options"></div><div class="quiz-actions"><button class="textbtn" id="backBtn">← Voltar</button><button class="btn" id="nextBtn" disabled>PRÓXIMA →</button></div></section>
-<section class="panel hidden result" id="result" aria-live="polite"></section>
-</main>
-<footer class="footer">Conheça seus interesses. Explore possibilidades. Construa seu caminho.<br><span style="opacity:.7">Teste gratuito de reflexão inicial sobre interesses profissionais • Polo Cosmos</span></footer>
-<script>
-const areas={
- artes:{name:'Artes e Cultura',desc:'Você demonstra afinidade com expressão, criação, cultura e experiências artísticas. Pode gostar de comunicar ideias por meio de linguagens criativas, do corpo, da cena e da produção cultural.',courses:['ARTES CÊNICAS LICENCIATURA']},
- comunicacao:{name:'Comunicação e Criatividade',desc:'Você parece se interessar por criação de mensagens, relacionamento, conteúdo, expressão e conexão com diferentes públicos. Ideias e criatividade podem ser importantes para você.',courses:['MARKETING','MARKETING DIGITAL']},
- social:{name:'Ciências Jurídicas e Sociais',desc:'Você demonstra interesse por sociedade, cidadania, relações humanas, direitos, políticas públicas e transformação social. Pode se identificar com atividades que envolvem escuta e participação social.',courses:['SERVIÇO SOCIAL','GESTÃO PÚBLICA','TEOLOGIA']},
- educacao:{name:'Educação e Inovação',desc:'Você pode gostar de compartilhar conhecimentos, desenvolver pessoas, estimular o movimento e criar experiências de aprendizagem e desenvolvimento.',courses:['EDUCAÇÃO FÍSICA - LICENCIATURA','GESTÃO DESPORTIVA E LAZER']},
- engenharia:{name:'Engenharia e Sustentabilidade',desc:'Você demonstra afinidade com planejamento de soluções concretas, projetos, processos, infraestrutura, meio ambiente e melhoria de sistemas.',courses:['ENGENHARIA AMBIENTAL E SANITÁRIA','ENGENHARIA CIVIL','ENGENHARIA DE PRODUÇÃO','GESTÃO DA PRODUÇÃO INDUSTRIAL','GESTÃO DA QUALIDADE','SEGURANÇA NO TRABALHO']},
- negocios:{name:'Negócios e Liderança',desc:'Você parece se interessar por organização, planejamento, gestão, empreendedorismo, finanças, pessoas e resultados. Pode gostar de estruturar projetos e tomar decisões.',courses:['ADMINISTRAÇÃO','CIÊNCIAS CONTÁBEIS','CIÊNCIAS ECONÔMICAS','EMPREENDEDORISMO','GESTÃO COMERCIAL','GESTÃO DE RECURSOS HUMANOS','GESTÃO FINANCEIRA','GESTÃO DE SEGURANÇA PRIVADA','GESTÃO DE TURISMO','LOGÍSTICA','NEGÓCIOS IMOBILIÁRIOS','PROCESSOS GERENCIAIS']},
- saude:{name:'Saúde e Bem-estar',desc:'Você demonstra interesse por cuidado, qualidade de vida, prevenção, corpo humano, alimentação, movimento e promoção da saúde.',courses:['BIOMEDICINA','EDUCAÇÃO FÍSICA - BACHARELADO','ESTÉTICA E COSMÉTICA','FARMÁCIA','FISIOTERAPIA','GESTÃO HOSPITALAR','GESTÃO DE SAÚDE PÚBLICA','NUTRIÇÃO']},
- tecnologia:{name:'Tecnologia e Futuro',desc:'Você parece gostar de lógica, sistemas, dados, inovação, ferramentas digitais e resolução de desafios tecnológicos.',courses:['ANÁLISE E DESENVOLVIMENTO DE SISTEMAS','BANCO DE DADOS','ENGENHARIA DE COMPUTAÇÃO','GESTÃO DA TECNOLOGIA DA INFORMAÇÃO']}
-};
-const questions=[
-{q:'Qual atividade mais desperta sua curiosidade?',a:[['saude','Entender o corpo humano e ajudar a melhorar a saúde das pessoas.'],['tecnologia','Descobrir como aplicativos, sistemas e tecnologias funcionam.'],['artes','Criar, interpretar, desenhar ou expressar ideias artisticamente.'],['negocios','Planejar projetos, organizar recursos e alcançar resultados.']]},
-{q:'Em um projeto em grupo, qual papel combina mais com você?',a:[['social','Ouvir as pessoas, mediar conversas e pensar no impacto para a comunidade.'],['negocios','Organizar tarefas, prazos e objetivos para o grupo avançar.'],['comunicacao','Criar a apresentação e encontrar a melhor forma de comunicar a ideia.'],['engenharia','Pensar na estrutura e em como transformar a ideia em algo viável.']]},
-{q:'Que tipo de problema você teria mais vontade de resolver?',a:[['engenharia','Como tornar construções, produtos ou processos mais eficientes e sustentáveis.'],['saude','Como prevenir doenças e melhorar a qualidade de vida.'],['tecnologia','Como desenvolver um sistema ou analisar dados para encontrar soluções.'],['social','Como ampliar oportunidades e melhorar a vida em sociedade.']]},
-{q:'Qual tema você escolheria para aprender mais por conta própria?',a:[['comunicacao','Marcas, redes sociais, produção de conteúdo e comportamento do público.'],['artes','Teatro, cultura, expressão corporal e linguagens artísticas.'],['tecnologia','Programação, inteligência artificial, dados e inovação digital.'],['educacao','Aprendizagem, desenvolvimento humano, esporte e movimento.']]},
-{q:'Em qual ambiente você imagina que se sentiria mais motivado?',a:[['saude','Clínicas, laboratórios, hospitais ou espaços de promoção da saúde.'],['negocios','Empresas, organizações, áreas administrativas ou empreendimentos.'],['artes','Espaços culturais, palcos, produções e projetos criativos.'],['engenharia','Obras, indústrias, projetos técnicos ou iniciativas ambientais.']]},
-{q:'O que mais importa para você ao realizar um trabalho?',a:[['social','Contribuir para uma sociedade mais justa e acolhedora.'],['tecnologia','Criar soluções inteligentes e acompanhar a inovação.'],['negocios','Alcançar metas, organizar recursos e gerar resultados.'],['saude','Fazer diferença no cuidado e no bem-estar das pessoas.']]},
-{q:'Qual tarefa parece mais interessante?',a:[['educacao','Ensinar, orientar ou desenvolver habilidades em outras pessoas.'],['comunicacao','Criar campanhas, conteúdos e estratégias de comunicação.'],['engenharia','Planejar um projeto e acompanhar sua execução.'],['tecnologia','Analisar informações e desenvolver uma solução digital.']]},
-{q:'Quando você precisa tomar uma decisão, costuma preferir:',a:[['negocios','Comparar custos, benefícios, prazos e resultados.'],['social','Considerar as pessoas envolvidas e os impactos sociais.'],['artes','Explorar possibilidades e escolher uma solução original.'],['saude','Pesquisar informações e considerar o bem-estar envolvido.']]},
-{q:'Qual assunto você teria prazer em estudar?',a:[['tecnologia','Sistemas, programação, banco de dados e computação.'],['saude','Anatomia, saúde, alimentação, estética e prevenção.'],['educacao','Educação, esporte, aprendizagem e desenvolvimento.'],['comunicacao','Marketing, criatividade, conteúdo e relacionamento.']]},
-{q:'Que resultado faria você sentir orgulho do seu trabalho?',a:[['engenharia','Ver uma estrutura, processo ou solução funcionando melhor.'],['artes','Produzir uma experiência artística que emocione ou inspire.'],['social','Ajudar pessoas e comunidades a conquistarem direitos e oportunidades.'],['negocios','Ver uma organização crescer de forma planejada e sustentável.']]},
-{q:'Qual destas atividades você escolheria para um dia livre?',a:[['artes','Participar de uma peça, oficina criativa ou atividade cultural.'],['saude','Praticar atividade física ou aprender sobre saúde e bem-estar.'],['tecnologia','Explorar uma ferramenta digital ou criar um projeto tecnológico.'],['social','Participar de uma ação comunitária ou debate sobre a sociedade.']]},
-{q:'Como você gostaria de contribuir com o mundo?',a:[['educacao','Compartilhando conhecimento e ajudando pessoas a se desenvolver.'],['engenharia','Criando soluções para cidades, indústria e meio ambiente.'],['comunicacao','Conectando pessoas e ideias por meio da comunicação.'],['saude','Promovendo saúde, prevenção e qualidade de vida.']]},
-{q:'Qual desafio parece mais estimulante?',a:[['negocios','Empreender, administrar equipes ou melhorar resultados.'],['tecnologia','Resolver um desafio lógico ou estruturar uma base de dados.'],['educacao','Desenvolver uma atividade que ensine e envolva pessoas.'],['artes','Criar uma apresentação ou experiência cultural.']]},
-{q:'Que tipo de conhecimento você gostaria de aprofundar?',a:[['social','Políticas públicas, cidadania, relações sociais e ética.'],['engenharia','Projetos, sustentabilidade, qualidade e segurança.'],['comunicacao','Estratégia de marca, marketing e comunicação digital.'],['saude','Funcionamento do organismo, cuidado e promoção da saúde.']]},
-{q:'Ao imaginar seu futuro profissional, o que mais chama sua atenção?',a:[['tecnologia','Trabalhar com inovação, sistemas e transformação digital.'],['negocios','Liderar projetos, empreender ou atuar na gestão.'],['educacao','Ensinar, orientar ou promover desenvolvimento por meio do esporte.'],['artes','Trabalhar com cultura, criatividade e expressão.']]}
-];
-let current=0,answers=[];const $=id=>document.getElementById(id);function show(id){['welcome','quiz','result'].forEach(x=>$(x).classList.toggle('hidden',x!==id));window.scrollTo({top:0,behavior:'smooth'});}function start(){current=0;answers=[];render();show('quiz')}function render(){const q=questions[current];$('counter').textContent=`Pergunta ${current+1} de ${questions.length}`;$('progress').style.width=`${(current/questions.length)*100}%`;$('question').textContent=q.q;$('options').innerHTML='';q.a.forEach(([key,label],i)=>{const b=document.createElement('button');b.className='option'+(answers[current]===key?' selected':'');b.innerHTML=`<span class="letter">${String.fromCharCode(65+i)}</span><span>${label}</span>`;b.onclick=()=>{answers[current]=key;renderOptions();$('nextBtn').disabled=false;};$('options').appendChild(b)});$('backBtn').disabled=current===0;$('nextBtn').disabled=!answers[current];$('nextBtn').textContent=current===questions.length-1?'VER MEU RESULTADO →':'PRÓXIMA →';}function renderOptions(){[...$('options').children].forEach((b,i)=>{b.classList.toggle('selected',questions[current].a[i][0]===answers[current]);});}
-function finish(){const score={};Object.keys(areas).forEach(k=>score[k]=0);answers.forEach(k=>score[k]++);const ranked=Object.keys(score).sort((a,b)=>score[b]-score[a]);const first=ranked[0],second=ranked[1];const area=areas[first],other=areas[second];const all=[...area.courses,...other.courses];const courses=[...new Set(all)];const result=$('result');result.innerHTML=`<span class="result-tag">Seu mapa de interesses</span><h2>${area.name}</h2><p>${area.desc}</p><div class="mini"><b>Outra área que também apareceu nas suas respostas: ${other.name}</b><span>Seus interesses podem combinar com mais de um caminho. Vale explorar as duas áreas.</span></div><h3 style="color:var(--navy);margin:24px 0 8px">Graduações para você conhecer</h3><p class="note">Estas são sugestões relacionadas às suas respostas e à lista de cursos informada pelo Polo Cosmos.</p><div class="course-list">${courses.map(c=>`<div class="course">${c}</div>`).join('')}</div><div class="cta"><span class="eyebrow">Seu próximo passo</span><h3>Gostou de uma das graduações? Converse com um consultor!</h3><p>Consulte as condições para conquistar uma bolsa de até <strong>97% de desconto</strong> e receba orientação para realizar sua matrícula. O percentual e a disponibilidade da bolsa estão sujeitos às regras e condições da campanha.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/5521981009342?text=${encodeURIComponent('Olá! Acabei de realizar o Teste Vocacional Rápido e Gratuito. Meu perfil de maior afinidade foi '+area.name+'. Quero falar com um consultor para conhecer as graduações e consultar as condições da bolsa de até 97% de desconto.')}">FALAR COM CONSULTOR PELO WHATSAPP</a></div><div class="disclaimer"><strong>Importante:</strong> este teste é uma ferramenta gratuita de reflexão sobre interesses e afinidades. Não é avaliação psicológica, diagnóstico ou orientação vocacional profissional. O resultado não determina sua profissão nem limita suas possibilidades. Converse com profissionais e conheça as grades curriculares antes de decidir.</div><div class="result-actions"><button class="btn secondary" id="restart">REFAZER TESTE</button><button class="textbtn" id="print">Imprimir / salvar resultado</button></div><p class="privacy">Nenhuma resposta ou dado pessoal é enviado ou armazenado por este site. O WhatsApp só será aberto se você clicar no botão.</p>`;$('progress').style.width='100%';$('restart').onclick=start;$('print').onclick=()=>window.print();show('result');}
-$('startBtn').onclick=start;$('startBtn2').onclick=start;$('backBtn').onclick=()=>{if(current>0){current--;render();}};$('nextBtn').onclick=()=>{if(!answers[current])return;if(current<questions.length-1){current++;render();}else finish();};
-</script>
-</body></html>
+/**
+ * TESTE VOCACIONAL — POLO COSMOS
+ * Google Apps Script para registrar leads em uma planilha Google.
+ *
+ * CONFIGURAÇÃO:
+ * 1) Crie uma planilha Google.
+ * 2) Copie o ID entre /d/ e /edit na URL da planilha.
+ * 3) Substitua COLE_O_ID_DA_PLANILHA abaixo.
+ * 4) Em Implantar > Nova implantação > App da Web:
+ *    Executar como: Eu
+ *    Quem pode acessar: Qualquer pessoa
+ * 5) Copie a URL terminada em /exec e coloque no index.html em GOOGLE_SCRIPT_URL.
+ *
+ * ATENÇÃO: use uma conta institucional autorizada e valide com a área responsável
+ * pela privacidade/LGPD antes de coletar dados reais.
+ */
+const SPREADSHEET_ID = "1stkJoNhHXH-Y47VenCyNUOlVjxEEg1Latpa986BBuRE";
+const SHEET_NAME = "Leads - Teste Vocacional";
+
+function doPost(e) {
+  try {
+    const raw = e && e.parameter && e.parameter.payload;
+    if (!raw) return output({ ok: false, message: "Payload ausente." });
+
+    const data = JSON.parse(raw);
+
+    const name = cleanText(data.name, 120);
+    const phone = cleanText(data.phone, 25);
+    const email = cleanText(data.email, 160);
+    const primary = cleanText(data.primaryProfile, 100);
+    const secondary = cleanText(data.secondaryProfile, 100);
+    const courses = cleanText(data.suggestedCourses, 1500);
+    const source = cleanText(data.source || "Teste Vocacional Polo Cosmos", 100);
+
+    const digits = phone.replace(/\D/g, "");
+    if (!name || digits.length < 10 || digits.length > 13 ||
+        data.resultConsent !== true || !primary || !secondary) {
+      return output({ ok: false, message: "Dados inválidos ou consentimento ausente." });
+    }
+
+    const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+    let sheet = ss.getSheetByName(SHEET_NAME);
+    if (!sheet) {
+      sheet = ss.insertSheet(SHEET_NAME);
+      sheet.appendRow([
+        "Data/hora", "Nome", "WhatsApp", "E-mail",
+        "Perfil principal", "Perfil secundário", "Graduações sugeridas",
+        "Aceite para registrar resultado", "Aceite de marketing", "Origem"
+      ]);
+      sheet.setFrozenRows(1);
+    }
+
+    sheet.appendRow([
+      new Date(),
+      safeCell(name),
+      safeCell(phone),
+      safeCell(email),
+      safeCell(primary),
+      safeCell(secondary),
+      safeCell(courses),
+      "Sim",
+      data.marketingConsent === true ? "Sim" : "Não",
+      safeCell(source)
+    ]);
+
+    return output({ ok: true });
+  } catch (err) {
+    return output({ ok: false, message: "Erro ao registrar." });
+  }
+}
+
+function cleanText(value, maxLength) {
+  return String(value == null ? "" : value).replace(/[<>]/g, "").trim().slice(0, maxLength);
+}
+
+// Evita que conteúdo enviado seja interpretado como fórmula na planilha.
+function safeCell(value) {
+  const s = String(value == null ? "" : value);
+  return /^[=+\-@]/.test(s) ? "'" + s : s;
+}
+
+function output(obj) {
+  return ContentService
+    .createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}
