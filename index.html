@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#063b63"><meta name="description" content="Faça um teste vocacional rápido e gratuito e descubra áreas profissionais que combinam com seus interesses.">
+<meta name="theme-color" content="#000000"><meta name="description" content="Faça um teste vocacional rápido e gratuito e descubra áreas profissionais que combinam com seus interesses.">
 <title>Teste Vocacional Rápido e Gratuito</title>
 <style>
 :root{--navy:#063b63;--navy2:#082e4c;--cyan:#00a9bd;--yellow:#ffd21a;--white:#fff;--ink:#102b40;--muted:#607487;--paper:#f4f8fa;--line:#dce7ed;--shadow:0 18px 55px #062f4b1c}
@@ -16,10 +16,84 @@
 .consent-row input{margin-top:4px;flex:0 0 auto}
 .form-error{color:#b42318;font-size:.86rem;font-weight:700}
 
+
+
+/* ===== IDENTIDADE VISUAL IEK: PRETO + VERDE-AGUA ===== */
+:root{
+  --navy:#00CED1;
+  --navy2:#000000;
+  --cyan:#00CED1;
+  --yellow:#00CED1;
+  --white:#ffffff;
+  --ink:#f4ffff;
+  --muted:#b8caca;
+  --paper:#050808;
+  --line:#254344;
+  --shadow:0 18px 55px #00000080;
+}
+html,body{background:#050808;color:#f4ffff}
+body{background:var(--paper);color:var(--ink)}
+.topbar{background:#000000;color:#ffffff;border-bottom:1px solid #173536;padding:12px 22px}
+.topinner{justify-content:center}
+.header-brand{display:flex;align-items:center;justify-content:center;gap:18px;min-height:66px}
+.header-brand img{display:block;width:auto;height:auto;max-width:min(210px,42vw);max-height:62px;object-fit:contain;filter:none}
+.header-brand span{color:#00CED1;font-size:clamp(.9rem,2.5vw,1.25rem);font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.hero{background:linear-gradient(125deg,#000000 0%,#071313 62%,#063536 100%);color:#ffffff}
+.hero:after{border-color:#00CED133}
+.hero:before{background:#00CED1}
+.eyebrow,.kicker,.smallcaps{color:#00CED1}
+.hero h1 span{color:#00CED1}
+.hero p{color:#d7e8e8}
+.btn{background:#00CED1;color:#001b1c;box-shadow:0 8px 22px #00CED126}
+.btn:hover{filter:brightness(1.08)}
+.btn.secondary{background:#101d1d;color:#00CED1;border:1px solid #00CED1}
+.btn:focus-visible,.option:focus-visible,input:focus-visible{outline:3px solid #00CED1}
+.wrap .panel{background:#0d1414;border:1px solid #254344;color:#f4ffff;box-shadow:var(--shadow)}
+.panel p{color:#d0dddd}
+.panel h2,.question,.result h2,.result h3{color:#00CED1!important}
+.mini{background:#142222}
+.mini b{color:#00CED1}
+.mini span,.note,.counter,.privacy{color:#b8caca}
+.progress{background:#263737}
+.progress span{background:#00CED1}
+.option{border-color:#315050;background:#111b1b;color:#f4ffff}
+.option:hover{border-color:#00CED1;background:#142727}
+.option.selected{border-color:#00CED1;background:#123536;box-shadow:inset 0 0 0 1px #00CED1}
+.letter{background:#203333;color:#00CED1}
+.option.selected .letter{background:#00CED1;color:#001b1c}
+.textbtn{color:#00CED1}
+.result-tag{background:#123536;color:#00CED1}
+.course{border-color:#315050;background:#111b1b;color:#eaffff}
+.cta{background:#000000;border:1px solid #00CED1;color:#ffffff}
+.cta p{color:#d0dddd}
+.lead-form label{color:#00CED1}
+.lead-form input[type=text],.lead-form input[type=tel],.lead-form input[type=email],.field{background:#101b1b;color:#ffffff;border-color:#315050}
+.lead-form input::placeholder{color:#91a6a6}
+.consent-row{color:#c3d1d1}
+.consent-row input{accent-color:#00CED1}
+.form-error{color:#ff8f8f}
+.disclaimer{border-left-color:#00CED1;background:#102727;color:#d9eeee}
+.privacy{color:#b8caca}
+.footer{background:#000000;color:#c6d7d7;border-top:1px solid #173536}
+.footer strong{color:#ffffff}
+@media(max-width:620px){
+  .topbar{padding:10px 14px}
+  .header-brand{gap:12px;min-height:58px}
+  .header-brand img{max-width:42vw;max-height:52px}
+  .header-brand span{font-size:.88rem;letter-spacing:.05em}
+}
+
 </style>
 </head>
 <body>
-<header class="topbar"><div class="topinner"><div class="header-title">TESTE VOCACIONAL RÁPIDO E GRATUITO</div></div></header>
+<header class="topbar">
+  <div class="topinner">
+    <div class="header-brand">
+      <img src="logo-iek-branca.png" alt="Logo do Instituto de Ensino Kodah (IEK)">
+      <span>TESTE VOCACIONAL</span>
+    </div>
+  </div>
+</header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">Seu futuro começa com autoconhecimento</div><h1>Descubra qual caminho <span>combina com você.</span></h1><p>Responda a perguntas sobre seus interesses, suas preferências e o tipo de atividade que desperta sua curiosidade. Ao final, conheça áreas profissionais e graduações para explorar.</p><button class="btn" id="startBtn">COMEÇAR MEU TESTE&nbsp; →</button></div></section>
 <main class="wrap">
 <section class="panel" id="welcome"><div class="smallcaps">Teste de afinidades profissionais</div><h2 style="color:var(--navy);font-size:1.8rem;margin:8px 0">Uma escolha mais consciente começa por você.</h2><p>Este questionário foi criado para ajudar você a refletir sobre áreas de interesse. Não existem respostas certas ou erradas: escolha a alternativa que mais combina com você neste momento.</p><div class="introgrid"><div class="mini"><b>15 perguntas</b><span>Rápido e intuitivo</span></div><div class="mini"><b>8 áreas</b><span>Interesses e possibilidades</span></div><div class="mini"><b>Resultado na hora</b><span>Com cursos para conhecer</span></div></div><p class="note">Tempo estimado: 3 a 5 minutos. Ao final, pediremos seu nome e WhatsApp para registrar sua participação e liberar o resultado.</p><button class="btn" id="startBtn2">FAZER O TESTE</button></section>
